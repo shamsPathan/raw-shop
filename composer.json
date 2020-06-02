@@ -1,0 +1,6 @@
+{
+    "require": {
+        "illuminate/database": "*",
+        "hybridauth/hybridauth": "^3.3"
+    }
+}

@@ -1,0 +1,183 @@
+#inventory-invoice{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+#inventory-invoice a{text-decoration:none ! important;}
+.invoice {
+    font-family: 'Tangerine', serif;
+    position: relative;
+    background-color: #FFF;
+    min-height: 680px;
+    padding: 15px;
+    margin-left: 10px;
+    margin-top:100px;
+}
+.invoice header {
+    width: 794px;
+    margin-bottom: 30px;
+    
+}
+
+.invoice .company-details {
+    
+    padding-right: 5px;
+    padding-bottom: 15px;
+    text-align: right
+}
+
+.invoice .company-details .name {
+    margin-top: 0;
+    margin-bottom: 0
+}
+
+.invoice .contacts {
+    margin-bottom: 15px
+}
+
+.invoice .invoice-to {
+    text-align: left
+    font-size:12px;
+
+}
+
+.invoice .invoice-to .to {
+    margin-top: 0;
+    margin-bottom: 0
+    font-size:15px;
+}
+
+.invoice .invoice-details {
+    text-align: right
+}
+.invoice .invoice-details .invoice-id {
+    margin-top: 0;
+    color: #006687;
+    font-size: 15px;
+
+}
+
+.invoice main {
+    padding-bottom: 20px
+}
+
+.invoice main .thanks {
+
+    margin-top: -100px;
+    font-size: 15px;
+    margin-bottom: 10px
+}
+
+.invoice main .notices {
+    padding-left: 6px;
+    border-left: 6px solid #3989c6
+}
+
+.invoice main .notices .notice {
+    font-size: 12px;
+}
+.invoice table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-bottom: 10px
+    background:transparent;
+}
+.invoice table td,.invoice table th {
+    padding: 5px;
+    background: #ffffff;
+    border-bottom: 1px solid #006687
+    color:#66cc00;
+}
+.invoice table th{
+    white-space: nowrap;
+    font-weight: 400;
+    font-size: 12px;
+    border:1px solid #006687;
+}
+.invoice table td{
+    border:1px solid #066887;
+}
+.invoice table td h3 {
+    margin: 0;
+    font-weight: 400;
+    color: #066887;
+    font-size: 12px;
+}
+
+.invoice table .tax,.invoice table .total,.invoice table .unit {
+    text-align: right;
+    font-size: 12px;
+}
+.invoice table .no {
+    color: #66cc00;
+    font-size: 12px;
+    background: transparent;
+}
+.invoice table .unit {
+     color: #066887;
+    font-size: 12px;
+    background: transparent;
+}
+
+.invoice table .total {
+
+    color: #006687;
+    font-size: 12px;
+    background: transparent;
+}
+.invoice table tfoot td {
+    background: 0 0;
+    border-bottom: none;
+    white-space: nowrap;
+    text-align: right;
+    padding: 8px 15px;
+    font-size: 12px;
+    border-top: 1px solid #66cc00
+}
+.invoice table tfoot tr:first-child td {
+    border-top: none
+}
+
+.invoice table tfoot tr:last-child td {
+    color: #3989c6;
+    font-size: 1.4em;
+    border-top: 1px solid #006687
+}
+
+.invoice table tfoot tr td:first-child {
+    border: none
+}
+.invoice footer {
+    width: 800px;
+    text-align: center;
+    color: #777;
+    padding: 8px 0
+}
+@media print {
+    .invoice {
+        font-size: 11px!important;
+        overflow: hidden!important
+    }
+    .invoice footer {
+        width: 100%;
+        position: fixed;
+        bottom: 0px;
+        page-break-after: always
+    }
+    .invoice>div:last-child {
+        page-break-before: always
+    }
+}
+#watermark {
+                color:green;
+                position: fixed;
+                top:   90px;
+                /** The width and height may change 
+                    according to the dimensions of your letterhead
+                **/
+                font-size: 2300%;
+
+                /** Your watermark should be behind every content**/
+                z-index:  -1000;
+                opacity:  0.05;
+            }
